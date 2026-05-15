@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#050505" />
+
+    <title>SuryaSandesh Enterprises — Independent DXN Organization in Nepal</title>
+    <meta
+      name="description"
+      content="SuryaSandesh Enterprises is a Nepal-based independent DXN organization helping individuals discover premium wellness products, leadership development, and global business opportunities."
+    />
+
+    <!-- High-intent keywords -->
+    <meta
+      name="keywords"
+      content="DXN Nepal, Ganoderma, wellness business, entrepreneurship, DXN opportunity, Triple Diamond leader, SuryaSandesh Enterprises"
+    />
+    <meta name="author" content="SuryaSandesh Enterprises" />
+    <link rel="canonical" href="https://suryasandesh.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SuryaSandesh Enterprises" />
+    <meta
+      property="og:title"
+      content="SuryaSandesh Enterprises — Independent DXN Organization in Nepal"
+    />
+    <meta
+      property="og:description"
+      content="Empowering wellness and entrepreneurship through DXN. Premium wellness products, leadership development, and global business opportunities — from Nepal."
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://suryasandesh.com/" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SuryaSandesh Enterprises" />
+    <meta
+      name="twitter:description"
+      content="A Nepal-based independent DXN organization — wellness education, leadership, and global business opportunity."
+    />
+
+    <!-- Typography: Switzer (display) + Geist (body). Preconnect for instant boot. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=switzer@600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--
+      JSON-LD structured data.
+
+      IMPORTANT BRAND ACCURACY:
+      - SuryaSandesh Enterprises is an INDEPENDENT DXN organization. It is
+        modeled as its own Organization, NOT as the owner of DXN.
+      - DXN (the brand it represents) is modeled separately, with its true
+        founder (Datuk Dr. Lim Siow Jin) and founding date (1993, Malaysia),
+        and linked from SuryaSandesh via the `memberOf` property.
+    -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://suryasandesh.com/#org",
+            "name": "SuryaSandesh Enterprises",
+            "alternateName": "SuryaSandesh DXN Organization",
+            "url": "https://suryasandesh.com",
+            "logo": "https://suryasandesh.com/og-logo.png",
+            "description": "A Nepal-based independent DXN leadership organization focused on wellness education, mentorship, and global business development.",
+            "areaServed": "Worldwide",
+            "knowsAbout": ["Ganoderma", "Wellness", "Entrepreneurship", "DXN business opportunity"],
+            "memberOf": { "@id": "https://www.dxn2u.com/#dxn" },
+            "sameAs": [
+              "https://www.facebook.com/suryasandesh",
+              "https://www.instagram.com/suryasandesh"
+            ]
+          },
+          {
+            "@type": "Corporation",
+            "@id": "https://www.dxn2u.com/#dxn",
+            "name": "DXN Holdings Bhd",
+            "alternateName": "DXN",
+            "foundingDate": "1993",
+            "foundingLocation": {
+              "@type": "Place",
+              "name": "Malaysia"
+            },
+            "founder": {
+              "@type": "Person",
+              "name": "Datuk Dr. Lim Siow Jin"
+            },
+            "description": "DXN is a Malaysian global wellness company founded in 1993, known for its Ganoderma-based products and the 'One Dragon' vertically integrated business model."
+          },
+          {
+            "@type": "LocalBusiness",
+            "@id": "https://suryasandesh.com/#local",
+            "name": "SuryaSandesh Enterprises",
+            "image": "https://suryasandesh.com/og-storefront.jpg",
+            "parentOrganization": { "@id": "https://suryasandesh.com/#org" },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Kathmandu",
+              "addressLocality": "Kathmandu",
+              "addressRegion": "Bagmati",
+              "postalCode": "44600",
+              "addressCountry": "NP"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 27.7172,
+              "longitude": 85.324
+            },
+            "telephone": "+977-1-0000000",
+            "priceRange": "$$",
+            "openingHours": "Mo-Sa 09:00-19:00"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="bg-surface text-white antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
